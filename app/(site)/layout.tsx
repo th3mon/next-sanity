@@ -1,3 +1,4 @@
+import { ReactNode } from 'react';
 import { getPages } from '@/sanity/sanity-utils';
 import Link from 'next/link';
 import '../globals.css';
@@ -10,7 +11,7 @@ export const metadata = {
 export default async function RootLayout({
  children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   const pages = await getPages();
 
