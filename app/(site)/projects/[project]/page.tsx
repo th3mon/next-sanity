@@ -12,12 +12,34 @@ export default async function Project({ params }: Props) {
   return (
     <div>
       <header className="flex items-center justify-between">
-        {/* TODO: Line is too long. Put className into new lines. */}
-        <h1 className="bg-gradient-to-r from-orange-400 via-rose-600 to-purple-600 bg-clip-text text-transparent text-5xl font-extrabold leading-normal">
+        <h1
+          className="
+            bg-gradient-to-r
+            from-orange-400
+            via-rose-600
+            to-purple-600
+            bg-clip-text
+            text-transparent
+            text-5xl
+            font-extrabold
+            leading-normal
+          "
+        >
           {project.name}
         </h1>
         <a
-          className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-pink-500 hover:text-pink-100 transition"
+          className="
+            bg-gray-100
+            rounded-lg
+            text-gray-500
+            font-bold
+            py-3
+            px-4
+            whitespace-nowrap
+            hover:bg-pink-500
+            hover:text-pink-100
+            transition
+          "
           href={project.url}
           title="View Project"
           target="_blank"
@@ -26,11 +48,23 @@ export default async function Project({ params }: Props) {
           View Project
         </a>
       </header>
-      <div className="text-lg text-gray-700 mt-5">
+      <div
+        className="
+          text-lg
+          text-gray-700
+          mt-5
+        "
+      >
         <PortableText  value={project.content} />
       </div>
       <Image
-        className="mt-10 border-2 border-gray-700 object-cover rounded-xl"
+        className="
+          mt-10
+          border-2
+          border-gray-700
+          object-cover
+          rounded-xl
+        "
         src={project.image}
         alt={project.name}
         width={1920}

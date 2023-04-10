@@ -5,6 +5,7 @@
     "no-trailing-spaces": "error",
     "object-curly-spacing": ["error", "always"],
     "semi": "error",
-    "semi-style": ["error", "last"]
+    "semi-style": ["error", "last"],
+    "max-len": ["error", { "code": 120 }]
   }
 }
