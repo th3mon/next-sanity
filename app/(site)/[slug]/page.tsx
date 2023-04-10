@@ -30,6 +30,11 @@ export default async function Page({ params }: Props) {
           text-lg
           text-gray-700
           mt-10
+          prose
+          prose-a:text-pink-500
+          prose-a:hover:text-pink-100
+          prose-a:hover:bg-pink-500
+          prose-a:transition
         "
       >
         <PortableText value={page.content} />
