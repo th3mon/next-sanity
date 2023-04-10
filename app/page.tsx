@@ -17,19 +17,19 @@ export default async function Home() {
       </h2>
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
-          <div key={project._id} className="border border-gray-500 rounded-lg p-3">
+          <div key={project._id} className="border-2 border-gray-500 rounded-lg p-1">
             {
               project.image && (
                 <Image
                   className="object-cover rounded-lg border border-gray-500"
                   src={project.image}
                   alt={project.name}
-                  width={250}
-                  height={100}
+                  width={750}
+                  height={300}
                 />
               )
             }
-            <div className="font-extrabold bg-gradient-to-r from-orange-400 via-rose-600 to-purple-600 bg-clip-text text-transparent">
+            <div className="mt-2 font-extrabold bg-gradient-to-r from-orange-400 via-rose-600 to-purple-600 bg-clip-text text-transparent">
               {project.name}
             </div>
           </div>
