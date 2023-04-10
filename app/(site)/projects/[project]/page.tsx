@@ -12,6 +12,7 @@ export default async function Project({ params }: Props) {
   return (
     <div>
       <header className="flex items-center justify-between">
+        {/* TODO: Line is too long. Put className into new lines. */}
         <h1 className="bg-gradient-to-r from-orange-400 via-rose-600 to-purple-600 bg-clip-text text-transparent text-5xl font-extrabold leading-normal">
           {project.name}
         </h1>
