@@ -32,7 +32,6 @@ export default async function Page({ params }: Props) {
           mt-10
         "
       >
-        {/* TODO: Use @tailwindcss/typography */}
         <PortableText value={page.content} />
       </div>
     </div>
