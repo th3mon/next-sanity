@@ -3,15 +3,10 @@ import {
   groq
 } from 'next-sanity';
 import { Project } from '@/types/Project';
+import clientConfig from '@/sanity/client.config';
 
 export async function getProjects(): Promise<Project[]> {
-  const client = createClient({
-    projectId: 'dydfr307',
-    dataset: 'production',
-    apiVersion: '2023-04-10',
-  });
-
-  return client.fetch(
+  return createClient(clientConfig).fetch(
     groq`*[_type == "project"]{
       _id,
       _createdAt,
@@ -25,14 +20,8 @@ export async function getProjects(): Promise<Project[]> {
 }
 
 export async function getProject(slug: string): Promise<Project> {
-  const client = createClient({
-    projectId: 'dydfr307',
-    dataset: 'production',
-    apiVersion: '2023-04-10',
-  });
-
   // TODO: Find out if it is possible to get just one record
-  return client.fetch(
+  return createClient(clientConfig).fetch(
     groq`*[_type == "project" && slug.current == $slug][0]{
       _id,
       _createdAt,
