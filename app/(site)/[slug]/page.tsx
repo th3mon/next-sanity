@@ -1,5 +1,6 @@
 import { getPage } from '@/sanity/sanity-utils';
 import { PortableText } from '@portabletext/react';
+import { GradientText } from '@/app/components/GradientText';
 
 type Props = {
   params: { slug: string },
@@ -12,18 +13,14 @@ export default async function Page({ params }: Props) {
     <div>
       <h1
         className="
-          bg-gradient-to-r
-          from-orange-400
-          via-rose-600
-          to-purple-600
-          bg-clip-text
-          text-transparent
           text-5xl
           font-extrabold
           leading-normal
         "
       >
-        {page.title}
+        <GradientText>
+          {page.title}
+        </GradientText>
       </h1>
       <div
         className="

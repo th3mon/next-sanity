@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { getProject } from '@/sanity/sanity-utils';
 import { PortableText } from '@portabletext/react';
+import { GradientText } from '@/app/components/GradientText';
 
 type Props = {
   params: { project: string },
@@ -14,18 +15,12 @@ export default async function Project({ params }: Props) {
       <header className="flex items-center justify-between">
         <h1
           className="
-            bg-gradient-to-r
-            from-orange-400
-            via-rose-600
-            to-purple-600
-            bg-clip-text
-            text-transparent
             text-5xl
             font-extrabold
             leading-normal
           "
         >
-          {project.name}
+          <GradientText>{project.name}</GradientText>
         </h1>
         <a
           className="

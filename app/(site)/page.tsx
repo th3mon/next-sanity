@@ -1,22 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FunctionComponent } from 'react';
 import { getProjects } from '@/sanity/sanity-utils';
-
-const Name: FunctionComponent = () =>
-  <span
-    className="
-      bg-gradient-to-r
-      from-orange-400
-      via-rose-600
-      to-purple-600
-      bg-clip-text
-      text-transparent
-    "
-  >
-    Przemysław
-  </span>;
-
+import { GradientText } from '@/app/components/GradientText';
 export default async function Home() {
   const projects = await getProjects();
 
@@ -28,7 +13,7 @@ export default async function Home() {
           font-extrabold
         "
       >
-        Hello I&apos;m <Name />!
+        Hello I&apos;m <GradientText>Przemysław</GradientText>!
       </h1>
       <p
         className="
@@ -93,15 +78,9 @@ export default async function Home() {
               className="
                 mt-2
                 font-extrabold
-                bg-gradient-to-r
-                from-orange-400
-                via-rose-600
-                to-purple-600
-                bg-clip-text
-                text-transparent
               "
             >
-              {project.name}
+              <GradientText>{project.name}</GradientText>
             </div>
           </Link>
         ))}

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
-import { getPages } from '@/sanity/sanity-utils';
 import Link from 'next/link';
+import { getPages } from '@/sanity/sanity-utils';
+import { GradientText } from '@/app/components/GradientText';
 import '../globals.css';
 
 export const metadata = {
@@ -33,18 +34,14 @@ export default async function RootLayout({
       >
         <Link
           className="
-            bg-gradient-to-r
-            from-orange-400
-            via-rose-600
-            to-purple-600
-            bg-clip-text
-            text-transparent
             text-lg
             font-bold
           "
           href="/"
         >
-          Przemysław Szelenberger
+          <GradientText>
+            Przemysław Szelenberger
+          </GradientText>
         </Link>
         <div
           className="
