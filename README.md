@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next + Sanity App
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) deployed on Vercel:
+
+- [next-sanity-wine.vercel.app](https://next-sanity-wine.vercel.app/)
+
+Project is built upon on tutorial [Create a Personal Website with Next.js 13, Sanity.io, TailwindCSS, and TypeScript
+]. You can go straight to the video on YouTube -> [Personal Website Tutorial with Next.js 13, Sanity.io, TailwindCSS, and TypeScript](https://youtu.be/OcTPaUfay5I)
 
 ## Getting Started
 
@@ -6,16 +13,11 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
+## API
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
@@ -46,3 +48,6 @@ Now you can do the following things:
 - [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
 - [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
 - [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+
+[Create a Personal Website with Next.js 13, Sanity.io, TailwindCSS, and TypeScript
+]:https://www.freecodecamp.org/news/create-a-personal-website-with-next-js-13-sanity-io-tailwindcss-and-typescript/
