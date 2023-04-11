@@ -24,14 +24,14 @@ export default async function Project({ params }: Props) {
         </h1>
         <a
           className="
-            bg-gray-100
-            rounded-lg
-            text-gray-500
+            bg-purple-950
+            text-purple-300
             font-bold
+            rounded-lg
             py-3
             px-4
             whitespace-nowrap
-            hover:bg-pink-500
+            hover:bg-pink-900
             hover:text-pink-100
             transition
           "
@@ -50,7 +50,7 @@ export default async function Project({ params }: Props) {
           mt-5
         "
       >
-        <PortableText  value={project.content} />
+        <PortableText value={project.content} />
       </div>
       <Image
         className="

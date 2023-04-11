@@ -23,6 +23,7 @@ export default async function RootLayout({
         max-w-3xl
         mx-auto
         py-10
+        bg-fuchsia-100
       "
     >
       <header
@@ -49,7 +50,7 @@ export default async function RootLayout({
             items-center
             gap-3
             text-sm
-            text-gray-600
+            text-gray-700
           "
         >
           {pages.map((page) => (
@@ -58,7 +59,7 @@ export default async function RootLayout({
                 py-2
                 px-4
                 rounded-xl
-                hover:bg-pink-500
+                hover:bg-pink-900
                 hover:text-pink-100
                 transition
               "

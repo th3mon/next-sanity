@@ -19,7 +19,7 @@ export default async function Home() {
         className="
           mt-3
           text-xl
-          text-gray-600
+          text-gray-700
         "
       >
         Hello everyone! Check out my projects!
@@ -47,12 +47,10 @@ export default async function Home() {
         {projects.map((project) => (
           <Link
             className="
-              border-2
-              border-gray-500
+              bg-purple-950
               rounded-lg
-              p-1
+              p-3
               hover:scale-105
-              hover:border-blue-500
               transition
             "
             key={project._id}
@@ -64,8 +62,6 @@ export default async function Home() {
                   className="
                     object-cover
                     rounded-lg
-                    border
-                    border-gray-500
                   "
                   src={project.image}
                   alt={project.name}
@@ -78,9 +74,10 @@ export default async function Home() {
               className="
                 mt-2
                 font-extrabold
+                text-purple-300
               "
             >
-              <GradientText>{project.name}</GradientText>
+              {project.name}
             </div>
           </Link>
         ))}
