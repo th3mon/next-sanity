@@ -47,7 +47,7 @@ export default async function Project({ params }: Props) {
         className="
           text-lg
           text-gray-700
-          mt-5
+          mt-10
         "
       >
         <PortableText value={project.content} />

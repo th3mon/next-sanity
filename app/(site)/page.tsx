@@ -17,7 +17,7 @@ export default async function Home() {
       </h1>
       <p
         className="
-          mt-3
+          mt-10
           text-xl
           text-gray-700
         "
